@@ -1,6 +1,11 @@
 .contenedor {
   margin-top: 51px;
 }
+
+.contenedorLookBook {
+  margin-top: 71px;
+}
+
 .contenedor{
   background-color: white;
 }
@@ -8,3 +13,13 @@
   background-repeat: no-repeat;
   background-position-x: center;
 }
+
+.descripcionDisenador {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.col50 {
+  width: 50%;
+}
+
