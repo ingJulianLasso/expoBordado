@@ -6,9 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/MiEstilo.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     </head>
     <body>
 
@@ -49,8 +48,8 @@
             </div>
         </div>
 
-        <script src="js/jquery-1.12.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/MiApp.js"></script>
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/MiApp.js"></script>
     </body>
 </html>

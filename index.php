@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <?php require 'src/header.php' ?>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <?php require 'src/header.php' ?>
+    </head>
+    <body>
 
-    <?php require 'src/menuTop.php' ?>
+        <?php require 'src/menuTop.php' ?>
 
         <div class="contenedor">
             <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
@@ -91,14 +91,14 @@
                         </div>
                         <br>
                         <div class="carousel-caption">
-                                <p>Lorem Ipsum ha sido el texto<br>
+                            <p>Lorem Ipsum ha sido el texto<br>
                                 de relleno estándar de las<br>
                                 Lorem Ipsum ha sido el texto<br>
                                 Lorem Ipsum ha sido el texto<br>
                                 de relleno estándar de las<br>
                                 Lorem Ipsum ha sido el texto<br>
                                 de relleno estándar de las
-                                </p>
+                            </p>
                         </div>
                         <div>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Video 1</button>
@@ -177,7 +177,7 @@
                         <div class="carousel-caption">
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <a data-toggle="modal" data-target=".bs-example-modal-lg" ><img src="img/Diseñador5.jpg" alt="..."></a>
                         <a data-toggle="modal" data-target=".bs-example-modal-lg" ><img src="img/Diseñador6.jpg" alt="..."></a>
@@ -199,24 +199,24 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="contenedor4">
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/youtube.png" width="120" height="120" alt="..."></a></p>
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/instagram.png" width="120" height="120" alt="..."></a></p>
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/facebook.png" width="120" height="120" alt="..."></a></p>
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/twitter.png" width="120" height="120" alt="..."></a></p>
         </div>
-        
+
         <div class="contenedor5">
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/Logo.png" width="120" height="120" alt="..."></a></p>
             <p>Dia/Mes/Año</p>
         </div>
-        
+
         <div class="contenedor6">
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/Patrocinador1.png" width="210" height="210" alt="..."></a></p>
             <p><a data-toggle="modal" data-target=".bs-example-modal-lg"><img border="2" src="img/Patrocinador1.png" width="210" height="210" alt="..."></a></p>
         </div>
-        
+
         <div class="contenedor7">
             <p>© Todos los derechos recervados</p>
         </div>
