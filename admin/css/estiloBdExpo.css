@@ -1,0 +1,27 @@
+#btnAgregarImg
+{
+    width: 40px;
+    height: 33px;
+}
+.img1
+{
+    position:relative;
+}
+#icon1
+{
+    position:absolute;
+    top: 260px ;
+    left: 230px;
+}
+#icon2
+{
+    position:absolute;
+    top: 260px ;
+    left: 333px;
+}
+#icon3
+{
+    position:absolute;
+    top: 260px ;
+    left: 436px;
+}
