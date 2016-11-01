@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2016 a las 13:38:07
+-- Tiempo de generación: 01-11-2016 a las 13:41:09
 -- Versión del servidor: 10.1.13-MariaDB
 -- Versión de PHP: 7.0.8
 
@@ -54,7 +54,8 @@ CREATE TABLE `item` (
   `disenador_id` int(11) NOT NULL,
   `descripcion` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
   `valor_social` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `precio` int(11) NOT NULL
+  `precio` int(11) NOT NULL,
+  `publicado` tinyint(1) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
