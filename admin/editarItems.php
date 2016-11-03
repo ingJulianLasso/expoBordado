@@ -34,15 +34,11 @@
                 </div>
                 <div class="form-group">
                   <label class="control-label">Descripcion</label>
-                  <textarea maxlength="250" type="text" name="descripcion" id="user" class="form-control" cols="30" rows="5">
-                    <?php echo $data['descripcion'] ?>
-                  </textarea>
+                  <textarea maxlength="250" type="text" name="descripcion" id="user" class="form-control" cols="30" rows="5"><?php echo $data['descripcion'] ?></textarea>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Valor Social</label>
-                  <textarea maxlength="250" type="text" name="valor_social" id="user" class="form-control" cols="30" rows="5">
-                    <?php echo $data['valor_social'] ?>
-                  </textarea>
+                  <textarea maxlength="250" type="text" name="valor_social" id="user" class="form-control" cols="30" rows="5"><?php echo $data['valor_social'] ?></textarea>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Precio</label>

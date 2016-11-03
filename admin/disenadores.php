@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
   </head>
-  <body>
+  <body style="margin-bottom: 40px">
 
     <div class="container container-fluid">
       <h1>Diseñadores</h1>
 
-      <div class="btn-group btn-group-justified" role="group">
+      <div class="btn-group btn-group-justified btn-group-lg" role="group">
         <a href="disenadores.php" class="btn btn-default active">Diseñadores</a>
         <a href="items.php" class="btn btn-default">Items</a>
         <a href="imagenes.php" class="btn btn-default">Imagenes</a>
       </div>
       <br>
-
+      <div class="btn-group btn-group-justified btn-group-lg" role="group">
+        <a href="registroDisenador.php" class="btn btn-default">Insertar Diseñador</a>
+      </div>
       <div class="table-responsive">
-        <table class="table">
+        <table class="table table-striped table-hover">
           <thead>
             <tr>
               <th>Diseñador</th>
@@ -62,13 +64,9 @@
         </table>
       </div>
 
-      <div class="btn-group btn-group-justified" role="group">
+      <div class="btn-group btn-group-justified btn-group-lg" role="group">
         <a href="registroDisenador.php" class="btn btn-default">Insertar Diseñador</a>
       </div>
-
-
-
-
     </div>
 
     <script src="../js/jquery-1.12.4.min.js"></script>
