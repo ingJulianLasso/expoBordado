@@ -24,6 +24,10 @@
                   <input type="text" name="disenador" id="disenador" class="form-control" value="<?php echo $data['nombre'] ?>">
                   <input type="hidden" name="id" id="id" value="<?php echo filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT) ?>">
                 </div>
+                <div class="form-group">
+                  <label class="control-label">Breve historia (500)</label>
+                  <textarea maxlength="500" name="historia" class="form-control"><?php echo $data['historia'] ?></textarea>
+                </div>
                 <button type="submit" class="btn btn-primary">Registrar</button>
                 <a href="disenadores.php" class="btn btn-default" >Cancelar</a>
               </form>

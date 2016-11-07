@@ -22,6 +22,10 @@
                   <label class="control-label">Nombre Diseñador</label>
                   <input type="text" name="disenador" id="user" class="form-control" placeholder="Digite Diseñador">
                 </div>
+                <div class="form-group">
+                  <label class="control-label">Breve historia (500)</label>
+                  <textarea maxlength="500" name="historia" class="form-control"></textarea>
+                </div>
                 <button type="submit" class="btn btn-primary">Registrar</button>
                 <a href="disenadores.php" class="btn btn-default" >Cancelar</a>
               </form>

@@ -41,6 +41,10 @@
                   <textarea maxlength="250" type="text" name="valor_social" id="user" class="form-control" cols="30" rows="5"><?php echo $data['valor_social'] ?></textarea>
                 </div>
                 <div class="form-group">
+                  <label class="control-label">URL de la Tienda</label>
+                  <input value="<?php echo $data['tienda'] ?>" type="text" name="tienda" id="user" class="form-control">
+                </div>
+                <div class="form-group">
                   <label class="control-label">Precio</label>
                   <input value="<?php echo $data['precio'] ?>" type="number" name="precio" id="user" class="form-control">
                 </div>

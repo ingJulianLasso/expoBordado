@@ -18,7 +18,7 @@
             <div class="panel panel-body">
               <h1>Registro de Imagen</h1>
 
-              <form action="#" method="post" enctype="multipart/form-data">
+              <form action="src/uploadImagen.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                   <label class="control-label">Seleccione el ítem</label>
                   <select class="form-control" name="item_id" required>

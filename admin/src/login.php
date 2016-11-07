@@ -18,5 +18,5 @@ if ($rsp === false) {
 } else {
     $_SESSION['user']['id'] = $rsp['Id'];
     $_SESSION['user']['name'] = $user;
-    header('Location: ../home.php');
+    header('Location: ../disenadores.php');
 }

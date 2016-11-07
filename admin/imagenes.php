@@ -1,3 +1,4 @@
+<?php require 'src/imagenes.php' ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +8,11 @@
     <title></title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <style>
+      .img50 {
+        min-height: 50px; max-height: 50px;
+      }
+    </style>
   </head>
   <body style="margin-bottom: 40px">
 
@@ -32,25 +38,38 @@
           </thead>
           <tbody>
 
-            <tr>
-              <td>
-                Cristhian
-              </td>
-              <td>
-                <img src="imagenes/No Llores Mas.jpg" width="100" height="120" class="img1">
-                <a id="icon1" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="glyphicon glyphicon-trash"></i></a><!-- Small modal -->
-                <img src="imagenes/Amor En Practica.jpg" width="100" height="120">
-                <a id="icon2" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="glyphicon glyphicon-trash"></i></a><!-- Small modal -->
-                <img src="imagenes/No Llores Mas.jpg" width="100" height="120">
-                <a id="icon3" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="glyphicon glyphicon-trash"></i></a><!-- Small modal -->
-                <img src="imagenes/Amor En Practica.jpg" width="100" height="120">
-                <img src="imagenes/No Llores Mas.jpg" width="100" height="120">
-                <img src="imagenes/Amor En Practica.jpg" width="100" height="120">
-              </td>
-              <td>
-                <a href="registroImagen.php" class="btn btn-default" id="btnAgregarImg"><i class="glyphicon glyphicon-plus"></i></a>
-              </td>
-            </tr>
+            <?php foreach ($newData as $imagen): ?>
+              <tr>
+                <td style="min-width: 30%; min-width: 30%">
+                  <?php echo $imagen['item'] . ' - ' . $imagen['disenador'] ?>
+                </td>
+                <td style="min-width: 70%; min-width: 70%">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <?php foreach ($imagen['imagen'] as $img): ?>
+                      <a data-toggle="modal" data-target="#deleteModal<?php echo $img['id'] ?>" class="btn btn-default" role="group">
+                        <img src="../uploads/<?php echo $img['nombre'] ?>" class="img50">
+                      </a>
+
+                      <div id="deleteModal<?php echo $img['id'] ?>" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                        <div class="modal-dialog modal-sm" role="document">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p style="text-align: center">¿Desea borrar la imagen indicada?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="src/deleteImagen.php?id=<?php echo $img['id'] ?>&img=<?php echo $img['nombre'] ?>" class="btn btn-danger btn-block">Borrar</a>
+                              <a data-dismiss="modal" class="btn btn-default btn-block">Cancelar</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <?php endforeach ?>
+                    <a href="registroImagen.php?id=<?php echo $imagen['item'] ?>" class="btn btn-default" role="group"><span class="glyphicon glyphicon-plus img50" aria-hidden="true"></span></a>
+                  </div>
+                </td>
+              </tr>
+            <?php endforeach ?>
 
           </tbody>
         </table>

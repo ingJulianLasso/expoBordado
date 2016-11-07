@@ -41,6 +41,10 @@
                   <textarea required maxlength="250" type="text" name="valor_social" id="user" class="form-control" cols="30" rows="5" placeholder="Digite Valor Social"></textarea>
                 </div>
                 <div class="form-group">
+                  <label class="control-label">URL de la tienda</label>
+                  <input required type="text" name="tienda" id="user" class="form-control" placeholder="URL de la tienda a comprar el item">
+                </div>
+                <div class="form-group">
                   <label class="control-label">Precio</label>
                   <input required type="number" name="precio" id="user" class="form-control" placeholder="Digite Precio">
                 </div>

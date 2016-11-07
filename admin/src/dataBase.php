@@ -13,11 +13,12 @@ function conectar() {
   }
 }
 
-function nuevoDisenador(PDO $conn, $disenador) {
+function nuevoDisenador(PDO $conn, $disenador, $historia) {
   try {
-    $sql = 'INSERT INTO disenador (nombre) VALUES (:disenador)';
+    $sql = 'INSERT INTO disenador (nombre, historia) VALUES (:disenador, :historia)';
     $params = array(
-        ':disenador' => $disenador
+        ':disenador' => $disenador,
+        ':historia' => $historia
     );
     $stmt = $conn->prepare($sql);
     $stmt->execute($params);
@@ -68,8 +69,19 @@ function getAllItems(PDO $conn) {
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getAllItemsForFrontEnd(PDO $conn) {
+  $sql = 'SELECT imagen.item_id, imagen.imagen, item.descripcion, item.valor_social, item.precio, item.tienda FROM item, imagen '
+          . 'WHERE item.id = imagen.item_id '
+          . 'AND item.activo = 1 '
+          . 'AND item.publicado = 1 '
+          . 'ORDER BY item.created_at DESC';
+  $stmt = $conn->prepare($sql);
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getDisenador(PDO $conn, $id) {
-  $sql = 'SELECT nombre FROM disenador WHERE activo = 1 AND id = :id';
+  $sql = 'SELECT nombre, historia FROM disenador WHERE activo = 1 AND id = :id';
   $params = array(
       ':id' => $id
   );
@@ -78,12 +90,13 @@ function getDisenador(PDO $conn, $id) {
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function updateDisenador(PDO $conn, $id, $disenador) {
+function updateDisenador(PDO $conn, $id, $disenador, $historia) {
   try {
-  $sql = 'UPDATE disenador SET nombre = :disenador WHERE id = :id';
+  $sql = 'UPDATE disenador SET nombre = :disenador, historia = :historia WHERE id = :id';
   $params = array(
       ':id' => $id,
-      ':disenador' => $disenador
+      ':disenador' => $disenador,
+      ':historia' => $historia
   );
   $stmt = $conn->prepare($sql);
   $stmt->execute($params);
@@ -106,13 +119,14 @@ function deleteDisenador(PDO $conn, $id) {
   return true;
 }
 
-function insertItem(PDO $conn, $descripcion, $valor_social, $precio, $id_disenador) {
-  $sql = 'INSERT INTO item (descripcion, valor_social, precio, disenador_id) VALUES (:descripcion, :valor_social, :precio, :id_disenador)';
+function insertItem(PDO $conn, $descripcion, $valor_social, $precio, $id_disenador, $tienda) {
+  $sql = 'INSERT INTO item (descripcion, valor_social, precio, disenador_id, tienda) VALUES (:descripcion, :valor_social, :precio, :id_disenador, :tienda)';
   $params = array(
       ':descripcion' => $descripcion,
       ':valor_social' => $valor_social,
       ':precio' => $precio,
-      ':id_disenador' => $id_disenador
+      ':id_disenador' => $id_disenador,
+      ':tienda' => $tienda
   );
   $stmt = $conn->prepare($sql);
   $stmt->execute($params);
@@ -120,14 +134,14 @@ function insertItem(PDO $conn, $descripcion, $valor_social, $precio, $id_disenad
 }
 
 function getAllDisenadores(PDO $conn) {
-  $sql = 'SELECT id, nombre FROM disenador WHERE activo = 1 ORDER BY created_at DESC';
+  $sql = 'SELECT id, nombre, historia FROM disenador WHERE activo = 1 ORDER BY created_at DESC';
   $stmt = $conn->prepare($sql);
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 function getItem(PDO $conn, $id) {
-  $sql = 'SELECT id, disenador_id, descripcion, valor_social, precio, publicado FROM item WHERE id = :id';
+  $sql = 'SELECT id, disenador_id, descripcion, valor_social, precio, publicado, tienda FROM item WHERE id = :id';
   $params = array(
       ':id' => $id
   );
@@ -172,6 +186,40 @@ function unPublicarItem(PDO $conn, $id) {
 
 function borrarItem(PDO $conn, $id) {
   $sql = 'UPDATE item SET activo = 0 WHERE id = :id';
+  $params = array(
+      ':id' => $id
+  );
+  $stmt = $conn->prepare($sql);
+  $stmt->execute($params);
+  return true;
+}
+
+function registrarImagen(PDO $conn, $item_id, $newNameImagen) {
+  $sql = 'INSERT INTO imagen (imagen, item_id) VALUES (:imagen, :item_id)';
+  $params = array(
+      ':imagen' => $newNameImagen,
+      ':item_id' => $item_id
+  );
+  $stmt = $conn->prepare($sql);
+  $stmt->execute($params);
+  return true;
+}
+
+function getAllImagenes(PDO $conn) {
+  $sql = 'SELECT imagen.id, imagen.imagen, imagen.item_id, disenador.nombre, imagen.posicion '
+          . 'FROM imagen, item, disenador '
+          . 'WHERE imagen.item_id = item.id '
+          . 'AND item.disenador_id = disenador.id '
+          . 'AND item.activo = 1 '
+          . 'AND disenador.activo = 1 '
+          . 'ORDER BY imagen.posicion ASC';
+  $stmt = $conn->prepare($sql);
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function deleteImagen(PDO $conn, $id) {
+  $sql = 'DELETE FROM imagen WHERE id = :id';
   $params = array(
       ':id' => $id
   );
