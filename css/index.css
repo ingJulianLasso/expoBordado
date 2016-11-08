@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .contenedor {
+    margin-top: 153px;
+  }
+}
+
 .contenedor {
   margin-top: 51px;
 }
@@ -44,21 +50,21 @@ div.TextOpaco p
 
 .div1 h1
 {
-    text-align: center;
-    font-size: 15px;
+  text-align: center;
+  font-size: 15px;
 }
 .div2 p
 {
-    text-align: center;
-    margin-bottom: 120px;
+  text-align: center;
+  margin-bottom: 120px;
 }
 .carousel-caption
 {
-    color: black;
+  color: black;
 }
 .div3 p
 {
-    text-align: center;
+  text-align: center;
 }
 
 .carousel-inner
@@ -96,7 +102,7 @@ div.TextOpaco p
 }
 .contenedor4 p
 {
-    text-align: center;
+  text-align: center;
 }
 .contenedor5
 {
@@ -106,7 +112,7 @@ div.TextOpaco p
 }
 .contenedor5 p
 {
-    color: white;
+  color: white;
 }
 .contenedor6
 {

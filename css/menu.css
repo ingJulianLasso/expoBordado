@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+  .logo {
+    min-width: 120px;
+    max-width: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #menu {
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  #menu > li {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  #menu > li > a:hover {
+    border-bottom: solid 2px #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo, .logoLI {
+    display: none;
+  }
+}
