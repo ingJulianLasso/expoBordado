@@ -15,9 +15,9 @@
       <h1>Items</h1>
 
       <div class="btn-group btn-group-justified btn-group-lg" role="group">
-        <a href="disenadores.php" class="btn btn-default">Diseñadores</a>
-        <a href="items.php" class="btn btn-default active">Items</a>
-        <a href="imagenes.php" class="btn btn-default">Imagenes</a>
+        <a href="disenadores.php" class="btn btn-default"><i class="glyphicon glyphicon-user"></i></a>
+        <a href="items.php" class="btn btn-default active"><i class="glyphicon glyphicon-th-large"></i></a>
+        <a href="imagenes.php" class="btn btn-default"><i class="glyphicon glyphicon-picture"></i></a>
       </div>
       <br>
       <div class="btn-group btn-group-justified btn-group-lg" role="group">

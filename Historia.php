@@ -3,57 +3,135 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/estiloPagHistoria.css">
+        <?php require 'src/header.php' ?>
     </head>
     <body>
-        <div class="container-fluid" id="contenedor1">
-            <p><img src="img/Logo.png"></p>
+        <?php require 'src/menuTop.php' ?>
+
+        <div class=" container-fluid contenedorPagHist visible-lg visible-md">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-1 col-md-1">
+                        hola
+                    </div>
+                    <div class="col-lg-10 col-md-10">
+                        <h1 class="tit">Historia</h1>
+                        <div class="cont1VistaMonitor">
+                            <div class="divCircular"><p>2016</p></div>
+                        </div>
+                        <div class="cont2VistaMonitor">
+                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
+                                1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una g
+                                alería de textos y los mezcló de tal manera que logró hacer un librode textos especimen. 
+                                No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos 
+                                electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la 
+                                creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente 
+                                con software deautoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                        </div>
+                        <div id="carousel-example-generic02" class="carousel slide" data-ride="carousel">
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox" id="contCarruselVistaMonitor">
+                                <div class="item active">
+                                    <img src="img/flor1.jpg" alt="..." width="25%" height="200px;">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/flor2.jpg" alt="..." width="25%" height="200px;">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic02" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic02" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        hola
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container-fluid" id="contenedor2">
-            <h1>Proyección</h1>
-            <p>Se busca afianzar y posicionar el evento<br>
-                a nivel nacional y proyectarlo a nivel<br>
-                internacional mediante las alianzas<br>
-                estratégicas con la Cámara de<br>
-                Comercio Colombo Americana en<br>
-                Miami, y el consulado de Colombia en<br>
-                New York, entre otros; para que<br>
-                Cartago sea reconocido mundialmente<br>
-                como Capital del Bordado y el Talento.</p>
-            <br>
-            <h1>Objetivo</h1>
-            <p>Bajo el modelo de un evento de City<br>
-                Marketing, vender la ciudad de<br>
-                Cartago, aprovechando su tradición,<br>
-                arquitectura, idiosincrasia, y su gran<br>
-                elemento diferenciador por el que es<br>
-                conocido a nivel nacional e internacional<br>
-                “El Bordado”, logrando así que el Norte<br>
-                del Valle sea visto como un polo de<br>
-                desarrollo en la moda del País; creando<br>
-                sentido de pertenencia y culturizando a<br>
-                la gente con esta propuesta.
-            </p>
-            <br>
-            <h1>Diseñadores</h1>
-            <p>Se convocaran diseñadores importantes<br>
-                de talla nacional, quienes presentaran<br>
-                en pasarela colecciones inéditas con<br>
-                técnicas de bordado y calado.</p>
-            <br>
-            <h1>Modelos</h1>
-            <p>Participaran las más significativas<br>
-                Agencias de Modelos de Bogotá y el<br>
-                Valle del Cauca; además algunas<br>
-                importantes Top Models del País lo cual<br>
-                dará una mayor proyección al evento.</p>
+        <div class="footerVistaMonitor visible-lg visible-md" >
+            <p>© Todos los derechos reservados</p>
         </div>
-        <div>
-            <a href="index.php">Regresar</a>
+
+        <div class="contenedorPagHistoria visible-xs">
+            <div class="contenedor1PagHist">
+                <h1>Historia</h1>
+            </div>
+            <div class="contenedor2PagHist">
+                <h1>2016</h1>
+            </div>
+            <div class="contenedor3PagHist">
+                <p>Lorem Ipsum es simplemente el texto de
+                    relleno de las imprentas y archivos de
+                    texto. Lorem Ipsum ha sido el texto de
+                    relleno estándar de las industrias desde el
+                    año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta)
+                    desconocido usó una galería de textos y los
+                    mezcló de tal manera que logró hacer un
+                    libro de textos especimen. No sólo
+                    sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en
+                    documentos electrónicos, quedando
+                    esencialmente igual al original. Fue
+                    popularizado en los 60s con la creación de
+                    las hojas "Letraset", las cuales contenian
+                    pasajes de Lorem Ipsum, y más
+                    recientemente con software de
+                    autoedición, como por ejemplo Aldus
+                    PageMaker, el cual incluye versiones de
+                    Lorem Ipsum.</p>
+            </div>
+            <div id="carousel-example-generic01" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" id="contCarrusel">
+                    <div class="item active">
+                        <img src="img/flor1.jpg" alt="..." width="100%" height="200px;">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/flor2.jpg" alt="..." width="100%" height="200px;">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    ...
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic01" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic01" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
+        <div class="contenedor4PagHist visible-xs">
+            <p>© Todos los derechos reservados</p>
+        </div>
+
+        <?php require 'src/footer.php' ?>
     </body>
 </html>

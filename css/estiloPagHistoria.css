@@ -1,23 +1,103 @@
-#contenedor1
+.contenedorPagHistoria
 {
-  background-color: #304864;
-  width: 100%;
-  height: 300px;
+    margin-top: 51px;
+    background-color: #2A445D;
+    width: 100%;
+    height: 840px;
 }
-#contenedor1 p
+.contenedor1PagHist h1
 {
-  text-align: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
-#contenedor1 img
+.contenedor2PagHist
 {
-  width: 300px;
-  height: 300px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
 }
-#contenedor2
+.contenedor2PagHist h1
 {
-  background-color: #1E3249;
-  color: white;
-  text-align: center;
-  width: 100%;
-  height: 960px;
+    text-align: center;
+    color: black;
+    padding: 40px;
+    font-size: 60px;
+}
+.contenedor3PagHist p
+{
+    color: white;
+    padding: 20px;
+    text-align: justify;
+}
+.contenedor4PagHist
+{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+.contenedor4PagHist p
+{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* DISEÑO VISTA MONITOR */
+
+.contenedorPagHist
+{
+    margin-top: 50px;
+    background-color: #2C4660;
+    height: 990px;
+}
+.tit
+{
+    font-size: 50px;
+    text-align: center;
+    padding:20px;
+    color: white;
+}
+.cont1VistaMonitor
+{
+    background-color: #2C4660;
+    min-width: 100%;
+    height: 300px;
+}
+.divCircular
+{
+    margin: 0 auto;
+    border-radius: 80%;
+    background-color: white;
+    padding: 80px;
+    width: 250px;
+    height: 250px;
+}
+.divCircular p
+{
+    font-size: 50px;
+    text-align: center;
+}
+.cont2VistaMonitor
+{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.footerVistaMonitor
+{
+    text-align: center;
+    background-color: #2A2A2A;
+    color: white;
+}
+#contCarruselVistaMonitor
+{
+    height: 300px;
 }

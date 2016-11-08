@@ -39,7 +39,6 @@
                                     <input type="password" name="password" id="password" class="form-control" placeholder="Digite Contraseña">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Entrar</button>
-                                <a href="registro.php" class="btn btn-default" >Registrar</a>
                             </form>
                         </div>
                     </div>

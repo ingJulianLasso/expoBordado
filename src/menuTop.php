@@ -13,21 +13,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul id="menu" class="nav navbar-nav">
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Casas Bordadoras</a></li>
-        <li><a href="#">Diseñadores</a></li>
+        <li><a href="Historia.php">Historia</a></li>
+        <li><a href="#CasasBordadoras">Casas Bordadoras</a></li>
+        <li><a href="#Diseñadores">Diseñadores</a></li>
         <li class="logoLI"><img src="img/logo.png" class="logo"></li>
         <li><a href="lookBook.php">Look Book</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Redes Sociales<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Youtube</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#Redes">Youtube</a></li>
+            <li><a href="#Redes">Instagram</a></li>
+            <li><a href="#Redes">Facebook</a></li>
+            <li><a href="#Redes">Twitter</a></li>
           </ul>
         </li>
-        <li><a href="#">Parrilla de progrmación</a></li>
+        <li><a href="#Parrilla">Parrilla de progrmación</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

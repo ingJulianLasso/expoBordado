@@ -1,28 +1,48 @@
-@media (min-width: 768px) {
-  .contenedor {
-    margin-top: 153px;
-  }
+body {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Estilo Vista Monitor */
+
+.contenedorPrincipal
+{
+    margin-top: 80px;
+    margin-top: 153px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+
+
+/* Estilo Vista Movil */
+
 .contenedor {
-  margin-top: 51px;
+    margin-top: 51px;
+    background-color: white;
+}
+
+#carousel-inner1
+{
+    width: 100%;
+    height: 535px; 
 }
 
 .contenedorLookBook {
-  margin-top: 71px;
-  margin-bottom: 40px;
+    margin-top: 71px;
+    margin-bottom: 60px;
 }
-
-.contenedor{
-  background-color: white;
-}
-
 .contenedor2{
-  background-color: white;
-  width: 100%;
-  height: 580px;
+    background-color: white;
+    width: 100%;
+    height: 580px;
 }
 
+/*
 div.TextOpaco
 {
   background-color: #A2A9B0;
@@ -38,6 +58,7 @@ div.TextOpaco p
   color: white;
   font-size: 21px;
 }
+*/
 
 .descripcionDisenador {
   margin-top: 10px;
@@ -50,82 +71,331 @@ div.TextOpaco p
 
 .div1 h1
 {
-  text-align: center;
-  font-size: 15px;
+    text-align: center;
+    font-size: 20px;
 }
 .div2 p
 {
-  text-align: center;
-  margin-bottom: 120px;
+    text-align: center;
+    margin-bottom: 160px;
 }
 .carousel-caption
 {
-  color: black;
+    color: black;
 }
-.div3 p
+.div3 a
 {
-  text-align: center;
+    text-align: center;
 }
 
 .carousel-inner
 {
-  width: 100%;
-  height: 580px;
+    width: 100%;
+    height: 580px;
 }
 .carousel-indicators li {
-  border: 1px solid #000;
-  width: 20px;
-  height: 20px;
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
 }
 
 .carousel-indicators .active {
-  background-color: #000;
-  width: 22px;
-  height: 22px;
+    background-color: #000;
+    width: 22px;
+    height: 22px;
 }
 
+
+
+
+
+
+
+
+.descripcionDisenador {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.col50 {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contenedor3{
-  background-color: yellow;
-  width: 100%;
-  height: 795px;
+    background-color: yellow;
+    width: 100%;
+    height: 750px;
 }
 #carousel-inner3
 {
-  width: 100%;
-  height: 795px; 
+    width: 100%;
+    height: 750px; 
 }
+#imgDiseñador2
+{
+    width:100%;
+    height: 250px;
+}
+.historiaDiseñador
+{
+    margin: 10px;
+    text-align: justify;
+}
+#contCarrusel
+{
+    height: 200px;
+}
+
+
+
+
+
+
 .contenedor4
 {
-  background-color: white;
-  width: 100%;
-  height: 520px; 
+    background-color: white;
+    width: 100%;
 }
 .contenedor4 p
 {
-  text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+.headerYoutube
+{
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #C14E43;
+}
+.TituloYoutube
+{
+    color: white;
+    font-size: 50px;
+}
+#btnYoutube
+{
+    width: 100%;
+    height: 300px;
+}
+.footerYoutube
+{
+    width: 100%;
+    height: 50px;
+    background-color: #C14E43; 
+}
+
+.headerInstagram
+{
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #5EB9B0;
+}
+.TituloInstagram
+{
+    color: white;
+    font-size: 50px;
+}
+#btnInstagram
+{
+    width: 100%;
+    height: 300px;
+}
+.footerInstagram
+{
+    width: 100%;
+    height: 50px;
+    background-color: #5EB9B0; 
+}
+
+.headerTwitter
+{
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #32AADC;
+}
+.TituloTwitter
+{
+    color: white;
+    font-size: 50px;
+}
+#btnTwitter
+{
+    width: 100%;
+    height: 300px;
+}
+.footerTwitter
+{
+    width: 100%;
+    height: 50px;
+    background-color: #32AADC; 
+}
+
+.headerFacebook
+{
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #2B5997;
+}
+.TituloFacebook
+{
+    color: white;
+    font-size: 50px;
+}
+#btnFacebook
+{
+    width: 100%;
+    height: 300px;
+}
+.footerFacebook
+{
+    width: 100%;
+    height: 50px;
+    background-color: #2B5997; 
+}
+
+
+
+
+
+
 .contenedor5
 {
-  background-color: black;
-  width: 100%;
-  height: 500px; 
+    text-align: center;
+    background-color: #2A2A2A;
+    width: 100%;
+    height: 300px; 
 }
-.contenedor5 p
+.contenedor5 img
 {
-  color: white;
+    margin-top: 30px;
 }
+.contenedor5 h2
+{
+    color: white;
+    margin-bottom: 20px;
+}
+.evento1
+{
+    background-color: #F0C643;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+.evento1 p
+{
+    margin-left: 20px;
+}
+.evento2
+{
+    background-color: #2A2A2A;
+    width: 100%;
+    height: 80px;
+    color: white;
+    padding-top: 10px;
+}
+.evento2 p
+{
+    margin-left: 20px;
+}
+
+
+
+
 .contenedor6
 {
-  background-color: white;
-  width: 100%;
-  height: 500px;
-  text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    text-align: center;
 }
+.tituloPatroc
+{
+    padding: 20px;
+}
+.GrupPatrocinadores
+{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.ContPatroc1
+{
+    border-radius: 80%;
+    background-color: black;
+    margin-left: 20px;
+    width: 120px;
+    height: 120px;
+}
+.imgPatrocinador
+{
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+.imgOrganizador
+{
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+}
+.ContPatroc2
+{
+    border-radius: 80%;
+    background-color: black;
+    margin-left: 30%;
+    width: 120px;
+    height: 120px;
+}
+.ContPatroc3
+{
+    border-radius: 80%;
+    background-color: black;
+    margin-left: 5px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+
+
+
+
+
 .contenedor7
 {
-  text-align: center;
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 300px; 
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 300px; 
 }
+.contenedor7 p
+{
+    vertical-align:text-bottom;
+}
+
+
+
+
